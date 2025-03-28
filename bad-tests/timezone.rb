@@ -1,4 +1,4 @@
-require 'test/unit'
+require_relative '../test_helper.rb'
 
 class BadTests
   class Timezone < Test::Unit::TestCase
