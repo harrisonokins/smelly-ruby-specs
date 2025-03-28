@@ -7,6 +7,7 @@ class GoodTests
       @original_timezone = ENV['TZ']
 
       # Set the timezone to UTC for these tests
+      # (note that this is not thread-safe)
       ENV['TZ'] = 'UTC'
     end
 
