@@ -2,7 +2,7 @@ require_relative '../test_helper.rb'
 
 class GoodTests
   class Seeds < Test::Unit::TestCase
-    def setup
+    def self.startup
       # Create a table to store user data
         DB.connection.execute <<-SQL
         CREATE TABLE IF NOT EXISTS users(
@@ -20,7 +20,7 @@ class GoodTests
       SQL
     end
 
-    def teardown
+    def self.shutdown
       # Cleanup the test data
       DB.connection.execute 'DROP TABLE users'
     end
