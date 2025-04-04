@@ -1,6 +1,7 @@
 require 'pry'
 require 'sqlite3'
 require 'test/unit'
+require 'mocha/test_unit'
 
 module DB
   @@db = nil
