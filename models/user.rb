@@ -9,7 +9,7 @@ class User
   def self.find(id)
     row = DB.connection.get_first_row('SELECT * FROM users WHERE id = ?', id)
 
-    return if row.empty?
+    return if row.nil?
 
     # Bind the attributes to a new user object
     new_user = User.new
