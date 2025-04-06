@@ -1,7 +1,9 @@
 # Smelly Specs
 
 ## About
-This repo contains a series of tests to illustrate common scenarios that prevent specs from run running effectively (or running at all).
+This repo contains a series of Ruby tests that illustrate common scenarios which can prevent specs from running effectively (or running at all).
+
+These tests have been written with [`test-unit`](https://github.com/test-unit/test-unit) to make them lightweight and fast, but the principles can be applied to any test suite (such as [`minitest`](https://github.com/minitest/minitest), [`cucumber`](https://github.com/cucumber/cucumber-ruby), or [`rspec`](https://github.com/rspec/rspec)).
 
 ## Installation
 1. Install [`rbenv`](https://github.com/rbenv/rbenv)
